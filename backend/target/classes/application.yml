@@ -23,4 +23,4 @@ app:
 
 # CORS allowed origin for Vite dev server
 cors:
-  allowedOrigin: ${CORS_ALLOWED_ORIGIN:http://localhost:5173}
+  allowedOrigin: ${CORS_ALLOWED_ORIGIN:https://minimartfrontend.netlify.app}
