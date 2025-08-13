@@ -17,10 +17,10 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # Copy the built jar from the build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose application port
 EXPOSE 8080
 
 # Start the application
-ENTRYPOINT ["java", "-jar", "backend-0.0.1.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
