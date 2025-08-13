@@ -1,11 +1,11 @@
 server:
-  port: 3001
+  port: ${PORT:3001} # Render sets PORT env variable
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/mydatabase
-    username: postgres
-    password: admin
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/mydatabase}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:admin}
   jpa:
     hibernate:
       ddl-auto: update
@@ -18,9 +18,9 @@ spring:
 
 app:
   jwt:
-    secret: "CHANGE_ME_TO_A_LONG_RANDOM_SECRET_VALUE_32+_CHARS"
+    secret: ${JWT_SECRET:CHANGE_ME_TO_A_LONG_RANDOM_SECRET_VALUE_32+_CHARS}
     expirationMs: 86400000
 
 # CORS allowed origin for Vite dev server
 cors:
-  allowedOrigin: "http://localhost:5173"
+  allowedOrigin: ${CORS_ALLOWED_ORIGIN:http://localhost:5173}
