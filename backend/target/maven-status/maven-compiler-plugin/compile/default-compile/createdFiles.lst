@@ -18,6 +18,7 @@ com\minimart\model\AuditModel.class
 com\minimart\web\ReportController.class
 com\minimart\dto\LoginResponse.class
 com\minimart\model\Customer.class
+com\minimart\web\UserController.class
 com\minimart\service\UserService.class
 com\minimart\repository\UserRepository.class
 com\minimart\dto\LoginRequest.class
@@ -32,4 +33,5 @@ com\minimart\model\Order.class
 com\minimart\model\Role.class
 com\minimart\security\JwtUtil.class
 com\minimart\service\OrderService.class
+com\minimart\dto\UpdateUserRequest.class
 com\minimart\model\OrderItem.class
